@@ -10,7 +10,6 @@
 
 namespace System.Net.Mqtt.Properties {
     using System;
-	using System.Reflection;
     
     
     /// <summary>
@@ -40,7 +39,7 @@ namespace System.Net.Mqtt.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("System.Net.Mqtt.Properties.Resources", typeof(Resources).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("System.Net.Mqtt.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -715,6 +714,15 @@ namespace System.Net.Mqtt.Properties {
         internal static string UnsubscribeFormatter_MissingTopics {
             get {
                 return ResourceManager.GetString("UnsubscribeFormatter_MissingTopics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while connecting via Web Sockets to the endpoint address {0}, to establish an MQTT connection.
+        /// </summary>
+        internal static string WebSocketChannelFactory_WebSocketClient_Failed {
+            get {
+                return ResourceManager.GetString("WebSocketChannelFactory_WebSocketClient_Failed", resourceCulture);
             }
         }
     }
